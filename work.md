@@ -1,1 +1,1 @@
-my name is junior i am currently learning digital skills for the future, that will boost my career in the future thanks
+my name is junior i am currently learning digital skills for the future, that will boost my career in the future thanks the boy is good
