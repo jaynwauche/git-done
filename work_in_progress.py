@@ -47,10 +47,9 @@ def staff_id_confirmation(user_login_name, user_login_password):
     '''
     if (user_login_name == d['username1'] and user_login_password == d['password1']) or\
        (user_login_name == d['username2'] and user_login_password == d['password2']):
-        message_log(message3)
+        return True
     else:
-        print(message_log(message4))
-        staff_login() 
+        return False
 
 def customer_account_number_creator():
     '''
@@ -144,7 +143,11 @@ def main():
             username = input('Username: ')
             password = input('password: ')
             read_file('staff.txt')
-            staff_id_confirmation(username, password)
+            if staff_id_confirmation(username, password) == True:
+                message_log(message3)
+            else:
+                message_log(message4)
+                continue
             user_session_file(username, password)
             while True:
                 try:
